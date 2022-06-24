@@ -90,9 +90,9 @@ class App extends React.Component{
 	           <Heading/>
 	           <Input
 		    inputVal={inputValue}
-		    inputChange={(text)=>this.inputChange(text)}/>    {/*Another way to pass
+		    inputChange={(text)=>this.inputChange(text)}/><Text>{/*Another way to pass
 		                                                      function as props
-		                                                     instead of using 'bind'*/}  
+		                                                     instead of using 'bind'*/}</Text>  
 		   <Todolist 
                    toggleComplete={this.toggleComplete}
 		   deleteTodo={this.deleteTodo}

@@ -16,12 +16,13 @@ const inputstuff=({inputVal,inputChange})=>(           //destructuring as props 
 const styles=StyleSheet.create({
 	textip:{
 		backgroundColor:'#acd216',
-		elevation:24,
+		elevation:10,
 		shadowRadius:15,
 		shadowColor:'blue',
-		fontSize:20,
+		fontSize:25,
 		marginLeft:22,
-		marginRight:22
+		marginRight:22,
+		height:30
 	}
 
 })

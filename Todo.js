@@ -9,12 +9,12 @@ const Todo=({todo,deleteTodo,toggleComplete})=>(
 	<TodoButton
 	name='Done'
 	complete={todo.complete}                       // basically True/False value here
-	onPress={()=>toggleComplete(todo.todoIndex)}/> {/* todo is an individual element passed
+	onPress={()=>toggleComplete(todo.todoIndex)}/><Text> {/* todo is an individual element passed
 		                                        from Todolist component,so 
 		                                        todo.todoIndex is a number denoting the
 		                                        index of object 'todo'*/}
 	                                                {/*Individual element here as Todolist 
-	                                                  component makes sure of it */}
+	                                                  component makes sure of it */}</Text>
 	<TodoButton
 	name='Delete'
 	onPress={()=>deleteTodo(todo.todoIndex)}/>
@@ -34,7 +34,7 @@ const Todolist=({todos,deleteTodo,toggleComplete})=>{
 					     {/*todo is passed...the object is stored inside*/}
 		                               {/*array todos*/} 
 	});
-	console.log("TODOS IS "+todos);
+	console.log("TODOS IS "+{todos});
     return(
 	     <View>
 	    {todos}
@@ -50,21 +50,19 @@ const styles=StyleSheet.create({
 		alignItems:'flex-end'
 	},
 	list:{
-		height:35,
-		marginLeft:10,
-		marginRight:10,
-                paddingLeft:10,
-		backgroundColor:'#cba987',
+		height:25,
+		marginLeft:22,
+		marginRight:22,
+                paddingLeft:5,
+		backgroundColor:'#aba985',
 		color:'white',
                 shadowOpacity:0.7,
 		borderColor:'#aaeded',
 		borderWidth:1,
-		shadowColor:'blue',
-		shadowRadius:5,
-		
+		shadowColor:'blue',		
 	},
 	font:{
-		fontSize:23,
+		fontSize:20,
 		color:'black'
 	}
 });
